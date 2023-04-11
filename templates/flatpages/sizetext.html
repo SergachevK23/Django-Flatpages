@@ -1,0 +1,18 @@
+{% extends 'flatpages/mainpage.html' %}
+<html>
+<head>
+<title>{% block title %}{{ flatpage.title }}{% endblock title %}</title>
+</head>
+<body>
+    {% block content %}
+    <p><font size="6" color="green" face="Airfool">{{ flatpage.title }}</font></p>
+    <hr>
+    <p><font size="1" face="Calibri">{{ flatpage.content }}</font></p>
+    <p><font size="2" face="Brush Script MT">{{ flatpage.content }}</font></p>
+    <p><font size="3" face="Arial">{{ flatpage.content }}</font></p>
+    <p><font size="4" face="Bodoni MT Black">{{ flatpage.content }}</font></p>
+    <p><font size="5" face="Airfool">{{ flatpage.content }}</font></p>
+    {% endblock content %}
+
+</body>
+</html>
